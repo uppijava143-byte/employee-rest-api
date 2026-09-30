@@ -20,7 +20,7 @@ public class EmployeeController {
     public ResponseEntity<List<Employee>> getAllEmployees() {
         return ResponseEntity.ok(employeeService.getAllEmployees());
     }
-
+ //added this code for fetching employee by ID
     @GetMapping("/{id}")
     public ResponseEntity<Employee> getEmployeeById(@PathVariable Long id) {
         return employeeService.getEmployeeById(id)
